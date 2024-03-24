@@ -6,11 +6,54 @@
     <title>JavaScript Playground</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-zinc-300 text-zinc-100">
-    <div class="flex flex-col w-screen items-center gap-12">
-        <div class="bg-zinc-500 p-8 mx-12 mt-12 rounded-xl w-11/12">
+<body class="bg-zinc-500 text-zinc-100 overflow-x-hidden">
+    <div class="flex flex-col w-screen max-w-3xl mx-auto items-center gap-12 p-6">
+        <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 mt-12 rounded-xl w-full shadow-2xl">
             <h1 class="text-4xl text-center">JavaScript Playground</h1>
         </div>
+
+        <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 rounded-xl w-full shadow-2xl">
+            <h1 class="text-2xl font-bold border-b-[1px] pb-1 mb-4 w-fit">Variable Declarations</h1>
+            <div class="flex flex-wrap gap-4 justify-between w-full">
+                <div class="border-[1px] rounded-lg w-full pb-4">
+                    <h2 class="text-xl font-semibold m-1 px-1 border-b-[1px] w-fit">var</h2>
+                    <div class="ml-4">
+                        <li>Global scope - can be seen outside of block</li>
+                        <li>Can be redeclared and redefined</li>
+                        <li>Hoisted - will be declared at top of scope but will not be defined</li>
+                    </div>
+                </div>
+                <div class="border-[1px] rounded-lg w-full pb-4">
+                    <h2 class="text-xl font-semibold m-1 px-1 border-b-[1px] w-fit">let</h2>
+                    <div class="ml-4">
+                        <li>Block scope - can only be seen inside of block</li>
+                        <li>Can be redefined but not redeclared</li>
+                        <li>No Hoisting</li>
+                    </div>
+                </div>
+                <div class="border-[1px] rounded-lg w-full pb-4">
+                    <h2 class="text-xl font-semibold m-1 px-1 border-b-[1px] w-fit">const</h2>
+                    <div class="ml-4">
+                        <li>Block scope - can only be seen inside of block</li>
+                        <li>Cannot be redefined or redeclared</li>
+                        <li>No Hoisting</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 rounded-xl w-full shadow-2xl">
+            <h1 class="text-2xl border-b-[1px] pb-1 w-fit">Variable Types</h1>
+            <div class="flex flex-col gap-3 p-4">
+                <li id="number-list-item">Number</li>
+                <li id="string-list-item">String</li>
+                <li id="boolean-list-item">Boolean</li>
+                <li id="array-list-item">Array</li>
+                <li id="symbol-list-item">Symbol</li>
+            </div>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
