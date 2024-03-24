@@ -6,7 +6,7 @@
     <title>JavaScript Playground</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-zinc-500 text-zinc-100 overflow-x-hidden">
+<body class="bg-zinc-500 text-zinc-100 text-sm text-balance overflow-x-hidden">
     <div class="flex flex-col w-screen max-w-3xl mx-auto items-center gap-12 p-6">
         <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 mt-12 rounded-xl w-full shadow-2xl">
             <h1 class="text-4xl text-center">JavaScript Playground</h1>
@@ -45,11 +45,14 @@
         <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 rounded-xl w-full shadow-2xl">
             <h1 class="text-2xl border-b-[1px] pb-1 w-fit">Variable Types</h1>
             <div class="flex flex-col gap-3 p-4">
-                <li id="number-list-item">Number</li>
-                <li id="string-list-item">String</li>
-                <li id="boolean-list-item">Boolean</li>
-                <li id="array-list-item">Array</li>
-                <li id="symbol-list-item">Symbol</li>
+                <li id="number-list-item">Number - 42, -7, 3.14</li>
+                <li id="string-list-item">String - "Hello World", "42"</li>
+                <li id="bigint-list-item">Bigint - [-2^(2^53 - 1) - 2^(2^53 - 1) - 1]</li>
+                <li id="boolean-list-item">Boolean - True / False</li>
+                <li id="null-list-item">Null - let num = null;</li>
+                <li id="undefined-list-item">Undefined - let num;</li>
+                <li id="symbol-list-item">Symbol - Unique and Immutable. Ex - const sym = Symbol('description');</li>
+                <li id="object-list-item">Object - Let obj = {x, y, z}</li>
             </div>
         </div>
     </div>

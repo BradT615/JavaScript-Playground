@@ -8,3 +8,7 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
+.flex.flex-col.gap-3.p-4 li {
+    text-indent: 0em;
+}

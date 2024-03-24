@@ -709,6 +709,10 @@ video {
   margin: 0.25rem;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -2074,6 +2078,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2506,6 +2520,10 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.flex.flex-col.gap-3.p-4 li {
+  text-indent: 0em;
 }
 
 @media (min-width: 640px) {
