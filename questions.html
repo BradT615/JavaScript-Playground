@@ -22,42 +22,284 @@
         </div>
 
         <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 rounded-xl w-full shadow-2xl">
-            <h1 class="text-xl font-bold my-4">What is Dynamic Typing?</h1>
+            <h1 class="text-xl font-bold mb-2">What is Dynamic Typing?</h1>
             <p>Dynamic typing is a feature of JavaScript that allows variables to hold values of any type without 
                 any type enforcement. This means that a variable can be assigned a value of one type and then 
                 later be assigned a value of a different type without any errors or warnings.
             </p>
 
-            <h1 class="text-xl font-bold my-4">What is a multi-paradigm language?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is a multi-paradigm language?</h1>
             <p>A multi-paradigm language is a programming language that supports more than one programming paradigm. 
                 JavaScript is considered a multi-paradigm language because it supports event-driven, functional, 
                 and imperative programming styles.
             </p>
 
-            <h1 class="text-xl font-bold my-4">What is the DOM?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the DOM?</h1>
             <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the 
                 structure of a document as a tree of objects, allowing developers to interact with and manipulate 
                 the document's content, structure, and style.
             </p>
 
-            <h1 class="text-xl font-bold my-4">DOM vs Virtual DOM</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">DOM vs Virtual DOM</h1>
             <p>The DOM (Document Object Model) is a programming interface for web documents. It represents the 
                 structure of a document as a tree of objects, allowing developers to interact with and manipulate 
                 the document's content, structure, and style. The Virtual DOM is a concept used in frameworks like 
                 React to improve performance by updating the DOM only when necessary.
             </p>
 
-            <h1 class="text-xl font-bold my-4">'==' vs '==='</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `let`, `const`, and `var` in JavaScript?</h1>
+            <p>
+            `let`, `const`, and `var` are different ways to declare variables in JavaScript. `var` is function-scoped and can be
+            redeclared and reassigned. `let` is block-scoped and can be reassigned but not redeclared. `const` is also block-scoped
+            but cannot be reassigned or redeclared, and its value must be assigned at the time of declaration.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What are closures in JavaScript?</h1>
+            <p>
+            Closures in JavaScript are a combination of a function and the lexical environment in which that function was declared.
+            A closure allows a function to access variables from its outer (enclosing) scope even after the outer function has
+            finished executing. Closures are powerful for creating private variables, implementing data privacy, and creating
+            function factories.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">'==' vs '==='</h1>
             <p>The '==' operator in JavaScript is used for loose equality, meaning it will compare two values 
                 after converting them to a common type. The '===' operator is used for strict equality, meaning 
                 it will compare two values without type conversion, resulting in true only if the values are of 
                 the same type and have the same value.
             </p>
 
-            <h1 class="text-xl font-bold my-4">What is Hoisting?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is Hoisting?</h1>
             <p>Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top 
                 of their containing scope during the compilation phase. This allows variables and functions to be 
                 used before they are declared.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `null` and `undefined` in JavaScript?</h1>
+            <p>
+            In JavaScript, `null` is an explicitly assigned value that represents no value or a non-existent object. It is a
+            primitive value and can be assigned to a variable. On the other hand, `undefined` is a primitive value that is
+            automatically assigned to variables that have been declared but not initialized or to function parameters that have not
+            been passed a value.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the `this` keyword in JavaScript?</h1>
+            <p>
+            The `this` keyword in JavaScript refers to the object that is currently executing or calling a function. Its value
+            depends on how a function is invoked and can vary based on the context in which it is used. `this` allows you to access
+            and manipulate the properties and methods of the object from within its own scope.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of event bubbling in JavaScript.</h1>
+            <p>
+            Event bubbling is a mechanism in JavaScript where an event triggered on a nested element propagates up the DOM tree,
+            triggering the same event on its parent elements. When an event is fired on an element, it first triggers the event
+            handlers attached to that element, then the event propagates to its parent elements, and so on, until it reaches the
+            top of the DOM tree or is stopped explicitly using `event.stopPropagation()`.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the `Promise` object in JavaScript?</h1>
+            <p>
+            The `Promise` object in JavaScript represents the eventual completion or failure of an asynchronous operation and
+            allows you to chain operations together. It provides a way to handle asynchronous code in a more readable and
+            manageable way compared to using callbacks. Promises have three states: pending, fulfilled, or rejected. They can be
+            resolved with a value or rejected with an error, and you can attach callbacks to handle the resolved value or catch
+            errors.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `slice()` and `splice()` in JavaScript arrays?</h1>
+            <p>
+            `slice()` and `splice()` are both methods used to manipulate arrays in JavaScript, but they serve different purposes.
+            `slice()` is used to extract a portion of an array and returns a new array containing the extracted elements. It does
+            not modify the original array. On the other hand, `splice()` is used to add or remove elements from an array at a
+            specified position. It modifies the original array and returns an array containing the removed elements.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of prototype inheritance in JavaScript.</h1>
+            <p>
+            Prototype inheritance is a mechanism in JavaScript that allows objects to inherit properties and methods from other
+            objects. Every object in JavaScript has a prototype, which is a reference to another object. When a property or method
+            is accessed on an object, JavaScript first looks for it on the object itself. If it's not found, it looks for it on
+            the object's prototype, and so on up the prototype chain until it reaches the end or finds the property or method.
+            This allows objects to share and reuse functionality without the need for duplication.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of currying in JavaScript.</h1>
+            <p>
+            Currying is a technique in functional programming where a function with multiple arguments is transformed into a
+            sequence of functions, each taking a single argument. It allows partial application of a function's arguments,
+            enabling the creation of more specialized functions. Currying helps in reducing the number of arguments passed to a
+            function and promotes code reusability and composability.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between a shallow copy and a deep copy in JavaScript?</h1>
+            <p>
+            In JavaScript, a shallow copy creates a new object or array that references the same nested objects or elements as the
+            original. Changes made to the nested objects or elements in the copy will affect the original, and vice versa. On the
+            other hand, a deep copy creates a completely independent copy of an object or array, recursively copying all nested
+            objects or elements. Changes made to the nested objects or elements in the deep copy do not affect the original.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the event loop in JavaScript, and how does it work?</h1>
+            <p>
+            The event loop is a mechanism in JavaScript that handles the execution of code, collection and processing of events,
+            and execution of queued sub-tasks. It continuously checks the call stack and the task queue. If the call stack is
+            empty, it takes the first task from the queue and pushes it onto the call stack for execution. This process continues
+            indefinitely, allowing JavaScript to perform non-blocking I/O operations and maintain a responsive user interface.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the difference between `Object.freeze()` and `Object.seal()` in JavaScript.</h1>
+            <p>
+            `Object.freeze()` and `Object.seal()` are both methods used to restrict modifications to an object, but they work
+            differently. `Object.freeze()` makes an object immutable, meaning its properties cannot be added, modified, or deleted.
+            It effectively makes the object read-only. On the other hand, `Object.seal()` allows modification of existing
+            properties but prevents the addition or deletion of properties. Sealed objects can have their property values changed,
+            but the object's structure remains fixed.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is a higher-order function in JavaScript?</h1>
+            <p>
+            A higher-order function is a function that takes one or more functions as arguments and/or returns a function as its
+            result. It treats functions as first-class citizens, allowing them to be assigned to variables, passed as arguments,
+            and returned from other functions. Higher-order functions enable powerful abstractions and enable functional
+            programming techniques such as map, filter, and reduce.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of memoization in JavaScript.</h1>
+            <p>
+            Memoization is a technique used to optimize expensive function calls by caching the results of previous invocations.
+            It involves storing the computed results of a function based on its input arguments, so that if the function is called
+            again with the same arguments, the cached result can be returned instead of recomputing the value. Memoization helps
+            improve performance by avoiding redundant calculations and can be particularly useful for recursive functions or
+            functions with costly operations.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the `bind()` method in JavaScript?</h1>
+            <p>
+            The `bind()` method in JavaScript is used to create a new function with a fixed `this` value and, optionally,
+            pre-bound arguments. It allows you to explicitly set the value of `this` for a function, regardless of how it is
+            invoked. When a bound function is called, the pre-bound `this` value and any pre-bound arguments are passed to the
+            original function. `bind()` is commonly used for method borrowing, currying, and creating partially applied functions.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of a promise chain in JavaScript.</h1>
+            <p>
+            A promise chain is a sequence of promise-based operations connected using the `then()` method. Each `then()` block
+            receives the result of the previous promise and can perform additional asynchronous operations, transform the data, or
+            return a new promise. Promise chaining allows you to write asynchronous code in a more readable and sequential manner,
+            avoiding nested callbacks and improving error handling. You can chain multiple `then()` blocks together, and if an
+            error occurs at any point in the chain, it can be caught using the `catch()` method.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `call()`, `apply()`, and `bind()` in JavaScript?</h1>
+            <p>
+            `call()`, `apply()`, and `bind()` are methods used to set the `this` value of a function and invoke it with specified
+            arguments, but they differ in their usage:
+            - `call()` invokes the function immediately, passing the `this` value and individual arguments as separate parameters.
+            - `apply()` invokes the function immediately, passing the `this` value and an array or array-like object of arguments.
+            - `bind()` returns a new function with the `this` value and any pre-bound arguments fixed, allowing it to be invoked
+                later.
+            These methods provide flexibility in borrowing methods, invoking functions with different contexts, and creating
+            partially applied or curried functions.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `innerHTML` and `textContent` in DOM manipulation?</h1>
+            <p>
+            `innerHTML` and `textContent` are both properties used to manipulate the content of an element, but they work
+            differently:
+            - `innerHTML` retrieves or sets the HTML content within an element. It parses the string as HTML and updates the
+                element's content accordingly, including any nested HTML tags.
+            - `textContent` retrieves or sets the text content of an element and its descendants. It treats the content as plain
+                text and does not parse any HTML tags.
+            Using `innerHTML` can be useful when you want to insert or retrieve HTML markup, while `textContent` is suitable for
+            working with plain text content.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is event delegation in JavaScript, and how does it work?</h1>
+            <p>
+            Event delegation is a technique in JavaScript where instead of attaching event listeners to individual elements, you
+            attach a single event listener to a parent element that can handle events for its descendant elements. When an event
+            occurs on a descendant element, it bubbles up the DOM tree, and the event listener on the parent element captures and
+            handles the event. Event delegation relies on the event bubbling mechanism and allows for more efficient event
+            handling, especially when dealing with dynamically added or removed elements.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">How can you create, append, and remove elements dynamically using JavaScript?</h1>
+            <p>
+            To create, append, and remove elements dynamically using JavaScript, you can use the following methods:
+            - `document.createElement(tagName)`: Creates a new element with the specified tag name.
+            - `parentElement.appendChild(element)`: Appends an element as the last child of a parent element.
+            - `parentElement.insertBefore(newElement, referenceElement)`: Inserts a new element before a reference element.
+            - `parentElement.removeChild(element)`: Removes a child element from its parent.
+            You can also use methods like `element.remove()` to directly remove an element, or `element.innerHTML = ''` to clear
+            an element's content.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of event capturing in DOM events.</h1>
+            <p>
+            Event capturing: In the capturing phase, the event starts from the top of the DOM tree and propagates down to the
+                target element. Event handlers registered with `addEventListener(type, listener, true)` are triggered during the
+                capturing phase before reaching the target element.
+            Understanding event bubbling and capturing helps in handling events effectively, especially when dealing with nested
+            elements and event delegation.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the difference between a DocumentFragment and a DOM node.</h1>
+            <p>
+            A DocumentFragment is a lightweight, minimal version of a Document object that serves as a temporary container for
+            holding a portion of the DOM tree. It is not part of the active DOM tree and does not have a parent node. When a
+            DocumentFragment is appended to an element, only its child nodes are inserted, not the fragment itself. This makes
+            DocumentFragments useful for performing multiple DOM manipulations efficiently, as they reduce the number of redraws
+            and reflows. On the other hand, a DOM node represents a single node in the DOM tree, such as an element, text node, or
+            comment node, and is part of the active DOM structure.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the Shadow DOM, and how does it differ from the regular DOM?</h1>
+            <p>
+            The Shadow DOM is a browser technology that allows developers to encapsulate and scope CSS styles, markup structure,
+            and behavior within a custom element. It creates a separate, hidden DOM tree that is attached to an element, known as
+            the shadow host. The Shadow DOM provides encapsulation and isolation, preventing styles and elements inside the shadow
+            tree from affecting the outside DOM, and vice versa. This enables the creation of self-contained, reusable components
+            that have their own styling and behavior. The regular DOM, on the other hand, represents the main document structure
+            and is accessible and modifiable by JavaScript code. The Shadow DOM enhances component-based development and improves
+            maintainability and modularity in web applications.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of DOM reflow and its performance implications.</h1>
+            <p>
+            DOM reflow refers to the process of recalculating the positions and dimensions of elements in the DOM tree when a
+            change occurs that affects the layout. It involves the browser recomputing the layout of the affected elements and
+            their ancestors, as well as any elements that depend on their positions. DOM reflow can be triggered by various
+            actions, such as resizing the browser window, modifying element styles, adding or removing elements, or changing
+            element content. Reflow is a computationally expensive operation and can have significant performance implications,
+            especially when triggered frequently. To optimize performance, it's important to minimize unnecessary reflows by
+            batching DOM manipulations, using CSS transforms instead of direct style changes, and avoiding querying layout
+            information repeatedly in loops.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">What are mutation observers in JavaScript, and how can they be used?</h1>
+            <p>
+            Mutation observers are a browser API that allows you to watch for changes in the DOM tree and react to those changes
+            asynchronously. They provide a way to observe and respond to the addition, removal, or modification of elements,
+            attributes, or text content within a specified DOM subtree. Mutation observers are created using the
+            `MutationObserver` constructor, which takes a callback function as an argument. The callback is invoked whenever
+            mutations occur, and it receives a list of `MutationRecord` objects describing the changes. Mutation observers are
+            useful for tracking and responding to dynamic changes in the DOM, such as monitoring the addition or removal of
+            specific elements, detecting attribute modifications, or observing the insertion or deletion of text nodes.
+            </p>
+
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the difference between `stopPropagation()` and `preventDefault()` in event handling.</h1>
+            <p>
+            `stopPropagation()` and `preventDefault()` are two methods used in event handling, but they serve different purposes:
+            - `stopPropagation()` stops the event from propagating or bubbling up the DOM tree. When called on an event object, it
+                prevents the event from being handled by any parent elements that may have event listeners attached. This is useful
+                when you want to contain the event within a specific element and prevent it from triggering any unwanted behavior in
+                ancestor elements.
+            - `preventDefault()` cancels the default action or behavior associated with an event. For example, when called on a
+                form submission event, it prevents the form from being submitted to the server. When used on a link click event, it
+                prevents the link from navigating to its `href` destination. `preventDefault()` allows you to override the default
+                behavior and implement your own custom logic.
+            Both methods are commonly used in event handling to control the flow and behavior of events in the DOM.
             </p>
         </div>
 
