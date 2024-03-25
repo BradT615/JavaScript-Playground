@@ -4,12 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Playground</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-zinc-500 text-zinc-100 text-sm text-balance overflow-x-hidden">
+<body class="bg-zinc-500 text-zinc-100 text-sm text-wrap overflow-x-hidden">
+    <div class="flex justify-between bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-2 mx-auto m-4 rounded-xl w-11/12 shadow-2xl">
+        <a href="/" ><img src="assets/logo-removebg.png" alt="Personal logo" class="w-[5vh] h-[5vh] max-w-12 max-h-12"></a>
+        <a href="/questions.html"  class="bg-zinc-500 hover:bg-zinc-400 text-zinc-100 font-semibold py-2 px-4 rounded-lg m-1">Interview Questions</a>
+    </div>
     <div class="flex flex-col w-screen max-w-3xl mx-auto items-center gap-12 p-6">
         <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 mt-12 rounded-xl w-full shadow-2xl">
             <h1 class="text-4xl text-center">JavaScript Playground</h1>
+        </div>
+
+        <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 rounded-xl w-full shadow-2xl">
+            <h1 class="text-2xl font-bold border-b-[1px] pb-1 mb-4 w-fit">What is JavaScript?</h1>
+            <p>JavaScript is a high-level, interpreted programming language that conforms to the 
+                ECMAScript specification. It has curly-bracket syntax, dynamic typing, prototype-based 
+                object-orientation, and first-class functions.</p> 
+            <p>As a multi-paradigm language, JavaScript
+                supports event-driven, functional, and imperative programming styles. It has APIs for 
+                working with text, arrays, dates, regular expressions, and the DOM (Document Object Model),
+                but does not include any I/O, such as networking, storage, or graphics facilities. Instead,
+                these functionalities are handled by the host environment in which JavaScript is embedded.
+            </p>
+            <p>JavaScript engines were originally used only in web browsers, but they are now core components 
+                of other software systems, most notably servers and a variety of applications. The most popular
+                runtime system for this usage is Node.js.
+            </p> 
+            <p>Client-side JavaScript extends the core 
+                language by supplying objects to control a browser and its Document Object Model (DOM). 
+                For example, client-side extensions allow an application to place elements on an HTML form 
+                and respond to user events such as mouse clicks, form input, and page navigation.
+            </p>
+            <p>JavaScript's dynamic capabilities include runtime object construction, variable parameter 
+                lists, function variables, dynamic script creation (via `eval`), object introspection 
+                (via `for...in`), and source-code recovery (JavaScript functions store their source text 
+                and can be retrieved through `toString()`).
+            </p>
         </div>
 
         <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 rounded-xl w-full shadow-2xl">
@@ -54,6 +86,25 @@
                 <li id="symbol-list-item">Symbol - Unique and Immutable. Ex - const sym = Symbol('description');</li>
                 <li id="object-list-item">Object - Let obj = {x, y, z}</li>
             </div>
+        </div>
+
+        <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 rounded-xl w-full shadow-2xl">
+            <h1 class="text-2xl border-b-[1px] pb-1 w-fit">Operators</h1> 
+            <div class="flex flex-col gap-3 p-4"> 
+                <li id="arithmetic-operators-list-item">Arithmetic operators: +, -, *, /, %, ++, --</li> 
+                <li id="assignment-operators-list-item">Assignment operators: =, +=, -=, *=, /=, %=</li> 
+                <li id="comparison-operators-list-item">Comparison operators: == (), ===, !=, !==, >, <, >=, <= </li>
+                <li id="bitwise-operators-list-item">Bitwise operators: &, |, ^, ~, <<, >>, >>> </li>
+                <li id="type-operators-list-item">Type operators: typeof, instanceof</li>
+                <li id="string-operators-list-item">String operators: +</li>
+                <li id="conditional-operators-list-item">Conditional operators: ?:</li>
+                <li id="unary-operators-list-item">Unary operators: delete, void, typeof, +, -</li>
+                <li id="relational-operators-list-item">Relational operators: in, instanceof</li>
+                <li id="grouping-operators-list-item">Grouping operators: ( )</li>
+                <li id="precedence-operators-list-item">Precedence operators: ()</li>
+                <li id="logical-operators-list-item">Logical operators: &&, ||, !</li> 
+                <li id="ternary-operator-list-item">Ternary operator: condition ? expr1 : expr2</li> 
+            </div> 
         </div>
     </div>
 
