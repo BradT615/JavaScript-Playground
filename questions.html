@@ -8,20 +8,57 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="bg-zinc-500 text-zinc-100 text-sm text-wrap overflow-x-hidden">
-    <div class="flex justify-between bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-2 mx-auto m-4 rounded-xl w-11/12 shadow-2xl">
-        <a href="/" ><img src="assets/logo-removebg.png" alt="Personal logo" class="w-[5vh] h-[5vh] max-w-12 max-h-12"></a>
-        <a href="/questions.html"  class="bg-zinc-500 hover:bg-zinc-400 text-zinc-100 font-semibold py-2 px-4 rounded-lg m-1">Interview Questions</a>
-    </div>
-    <div class="flex flex-col w-screen max-w-3xl mx-auto items-center gap-12 p-6">
-        <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 mt-12 rounded-xl w-full shadow-2xl">
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-2 mx-auto m-4 rounded-xl w-11/12 shadow-md transition-all duration-200">
+        <a href="/">
+            <img src="assets/logo-removebg.png" alt="Personal logo" class="w-8 h-8 lg:w-12 lg:h-12">
+        </a>
+        <a href="/questions.html" class="bg-zinc-500 hover:bg-zinc-400 text-zinc-100 font-semibold py-2 px-4 rounded-lg m-1">
+            Interview Questions
+        </a>
+    </header>
+    <div class="flex flex-col w-screen max-w-3xl mx-auto items-center gap-6 mt-12 p-6">
+        <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 mt-8 rounded-xl w-full shadow-2xl">
             <h1 class="text-4xl text-center">Interview Questions</h1>
         </div>
 
-        <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 mt-12 rounded-xl w-full shadow-2xl">
-            <ol type="1">
-                <li>What is JavaScript?</li>
-                <li>Variable Declarations</li>
-            </ol>
+        <div class="bg-zinc-600 bg-opacity-90 backdrop-blur-sm p-8 mx-12 rounded-xl w-full shadow-2xl">
+            <h1 class="text-xl font-bold my-4">What is Dynamic Typing?</h1>
+            <p>Dynamic typing is a feature of JavaScript that allows variables to hold values of any type without 
+                any type enforcement. This means that a variable can be assigned a value of one type and then 
+                later be assigned a value of a different type without any errors or warnings.
+            </p>
+
+            <h1 class="text-xl font-bold my-4">What is a multi-paradigm language?</h1>
+            <p>A multi-paradigm language is a programming language that supports more than one programming paradigm. 
+                JavaScript is considered a multi-paradigm language because it supports event-driven, functional, 
+                and imperative programming styles.
+            </p>
+
+            <h1 class="text-xl font-bold my-4">What is the DOM?</h1>
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the 
+                structure of a document as a tree of objects, allowing developers to interact with and manipulate 
+                the document's content, structure, and style.
+            </p>
+
+            <h1 class="text-xl font-bold my-4">DOM vs Virtual DOM</h1>
+            <p>The DOM (Document Object Model) is a programming interface for web documents. It represents the 
+                structure of a document as a tree of objects, allowing developers to interact with and manipulate 
+                the document's content, structure, and style. The Virtual DOM is a concept used in frameworks like 
+                React to improve performance by updating the DOM only when necessary.
+            </p>
+
+            <h1 class="text-xl font-bold my-4">'==' vs '==='</h1>
+            <p>The '==' operator in JavaScript is used for loose equality, meaning it will compare two values 
+                after converting them to a common type. The '===' operator is used for strict equality, meaning 
+                it will compare two values without type conversion, resulting in true only if the values are of 
+                the same type and have the same value.
+            </p>
+
+            <h1 class="text-xl font-bold my-4">What is Hoisting?</h1>
+            <p>Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top 
+                of their containing scope during the compilation phase. This allows variables and functions to be 
+                used before they are declared.
+            </p>
         </div>
 
     <script src="script.js"></script>
