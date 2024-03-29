@@ -19,7 +19,7 @@ const scrolledClasses = ['w-full', 'shadow-2xl', 'm-0', 'rounded-none', 'bg-opac
 const defaultClasses = ['w-11/12', 'shadow-md', 'm-4', 'rounded-xl', 'bg-opacity-90'];
 
 window.addEventListener('scroll', function() {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 1) {
         defaultClasses.forEach(className => header.classList.remove(className));
         scrolledClasses.forEach(className => header.classList.add(className));
     } else {
