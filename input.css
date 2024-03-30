@@ -12,6 +12,13 @@ body {
 .flex.flex-col.gap-3.p-4 li {
     text-indent: 0em;
 }
+
+.icon path {
+    fill: rgb(244, 244, 245);
+}
+.icon:hover path {
+    fill: white;
+}
   
 ::-webkit-scrollbar {
     width: 8px;
