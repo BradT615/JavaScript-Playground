@@ -47,14 +47,14 @@
                 React to improve performance by updating the DOM only when necessary.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `let`, `const`, and `var` in JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `let`, `const`, and `var`?</h1>
             <p>
             `let`, `const`, and `var` are different ways to declare variables in JavaScript. `var` is function-scoped and can be
             redeclared and reassigned. `let` is block-scoped and can be reassigned but not redeclared. `const` is also block-scoped
             but cannot be reassigned or redeclared, and its value must be assigned at the time of declaration.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What are closures in JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What are closures?</h1>
             <p>
             Closures in JavaScript are a combination of a function and the lexical environment in which that function was declared.
             A closure allows a function to access variables from its outer (enclosing) scope even after the outer function has
@@ -75,7 +75,7 @@
                 used before they are declared.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `null` and `undefined` in JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `null` and `undefined`?</h1>
             <p>
             In JavaScript, `null` is an explicitly assigned value that represents no value or a non-existent object. It is a
             primitive value and can be assigned to a variable. On the other hand, `undefined` is a primitive value that is
@@ -83,14 +83,14 @@
             been passed a value.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the `this` keyword in JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the `this` keyword?</h1>
             <p>
             The `this` keyword in JavaScript refers to the object that is currently executing or calling a function. Its value
             depends on how a function is invoked and can vary based on the context in which it is used. `this` allows you to access
             and manipulate the properties and methods of the object from within its own scope.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of event bubbling in JavaScript.</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of event bubbling.</h1>
             <p>
             Event bubbling is a mechanism in JavaScript where an event triggered on a nested element propagates up the DOM tree,
             triggering the same event on its parent elements. When an event is fired on an element, it first triggers the event
@@ -98,7 +98,7 @@
             top of the DOM tree or is stopped explicitly using `event.stopPropagation()`.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the `Promise` object in JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the `Promise` object?</h1>
             <p>
             The `Promise` object in JavaScript represents the eventual completion or failure of an asynchronous operation and
             allows you to chain operations together. It provides a way to handle asynchronous code in a more readable and
@@ -107,7 +107,7 @@
             errors.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `slice()` and `splice()` in JavaScript arrays?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `slice()` and `splice()` in arrays?</h1>
             <p>
             `slice()` and `splice()` are both methods used to manipulate arrays in JavaScript, but they serve different purposes.
             `slice()` is used to extract a portion of an array and returns a new array containing the extracted elements. It does
@@ -115,7 +115,7 @@
             specified position. It modifies the original array and returns an array containing the removed elements.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of prototype inheritance in JavaScript.</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of prototype inheritance.</h1>
             <p>
             Prototype inheritance is a mechanism in JavaScript that allows objects to inherit properties and methods from other
             objects. Every object in JavaScript has a prototype, which is a reference to another object. When a property or method
@@ -124,7 +124,7 @@
             This allows objects to share and reuse functionality without the need for duplication.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of currying in JavaScript.</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of currying.</h1>
             <p>
             Currying is a technique in functional programming where a function with multiple arguments is transformed into a
             sequence of functions, each taking a single argument. It allows partial application of a function's arguments,
@@ -132,7 +132,7 @@
             function and promotes code reusability and composability.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between a shallow copy and a deep copy in JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between a shallow copy and a deep copy?</h1>
             <p>
             In JavaScript, a shallow copy creates a new object or array that references the same nested objects or elements as the
             original. Changes made to the nested objects or elements in the copy will affect the original, and vice versa. On the
@@ -140,7 +140,7 @@
             objects or elements. Changes made to the nested objects or elements in the deep copy do not affect the original.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is the event loop in JavaScript, and how does it work?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the event loop, and how does it work?</h1>
             <p>
             The event loop is a mechanism in JavaScript that handles the execution of code, collection and processing of events,
             and execution of queued sub-tasks. It continuously checks the call stack and the task queue. If the call stack is
@@ -148,7 +148,7 @@
             indefinitely, allowing JavaScript to perform non-blocking I/O operations and maintain a responsive user interface.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">Explain the difference between `Object.freeze()` and `Object.seal()` in JavaScript.</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the difference between `Object.freeze()` and `Object.seal()`.</h1>
             <p>
             `Object.freeze()` and `Object.seal()` are both methods used to restrict modifications to an object, but they work
             differently. `Object.freeze()` makes an object immutable, meaning its properties cannot be added, modified, or deleted.
@@ -157,7 +157,7 @@
             but the object's structure remains fixed.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is a higher-order function in JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is a higher-order function?</h1>
             <p>
             A higher-order function is a function that takes one or more functions as arguments and/or returns a function as its
             result. It treats functions as first-class citizens, allowing them to be assigned to variables, passed as arguments,
@@ -165,7 +165,7 @@
             programming techniques such as map, filter, and reduce.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of memoization in JavaScript.</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of memoization.</h1>
             <p>
             Memoization is a technique used to optimize expensive function calls by caching the results of previous invocations.
             It involves storing the computed results of a function based on its input arguments, so that if the function is called
@@ -174,7 +174,7 @@
             functions with costly operations.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the `bind()` method in JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the purpose of the `bind()` method?</h1>
             <p>
             The `bind()` method in JavaScript is used to create a new function with a fixed `this` value and, optionally,
             pre-bound arguments. It allows you to explicitly set the value of `this` for a function, regardless of how it is
@@ -182,7 +182,7 @@
             original function. `bind()` is commonly used for method borrowing, currying, and creating partially applied functions.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of a promise chain in JavaScript.</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">Explain the concept of a promise chain.</h1>
             <p>
             A promise chain is a sequence of promise-based operations connected using the `then()` method. Each `then()` block
             receives the result of the previous promise and can perform additional asynchronous operations, transform the data, or
@@ -191,7 +191,7 @@
             error occurs at any point in the chain, it can be caught using the `catch()` method.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `call()`, `apply()`, and `bind()` in JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is the difference between `call()`, `apply()`, and `bind()`?</h1>
             <p>
             `call()`, `apply()`, and `bind()` are methods used to set the `this` value of a function and invoke it with specified
             arguments, but they differ in their usage:
@@ -215,7 +215,7 @@
             working with plain text content.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What is event delegation in JavaScript, and how does it work?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What is event delegation and how does it work?</h1>
             <p>
             Event delegation is a technique in JavaScript where instead of attaching event listeners to individual elements, you
             attach a single event listener to a parent element that can handle events for its descendant elements. When an event
@@ -224,7 +224,7 @@
             handling, especially when dealing with dynamically added or removed elements.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">How can you create, append, and remove elements dynamically using JavaScript?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">How can you create, append, and remove elements dynamically?</h1>
             <p>
             To create, append, and remove elements dynamically using JavaScript, you can use the following methods:
             - `document.createElement(tagName)`: Creates a new element with the specified tag name.
@@ -277,7 +277,7 @@
             information repeatedly in loops.
             </p>
 
-            <h1 class="text-xl font-bold mt-6 mb-1">What are mutation observers in JavaScript, and how can they be used?</h1>
+            <h1 class="text-xl font-bold mt-6 mb-1">What are mutation observers and how can they be used?</h1>
             <p>
             Mutation observers are a browser API that allows you to watch for changes in the DOM tree and react to those changes
             asynchronously. They provide a way to observe and respond to the addition, removal, or modification of elements,
